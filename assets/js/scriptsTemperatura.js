@@ -9,8 +9,8 @@ var fahrenheit = celsius + 32;
 
 // 3. Se muestran datos por pantalla
 document.write(`<h1>Conversión grados Kelvin.</h1>`);
-document.write(`${kelvin}`);
+document.write(`${kelvin}K°`);
 
 document.write(`<h1>Conversión grados Fahrenheit.</h1>`);
-document.write(`${fahrenheit}`);
+document.write(`${fahrenheit}F°`);
 
