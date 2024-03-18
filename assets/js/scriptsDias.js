@@ -7,7 +7,7 @@ var dias = parseInt(prompt("Ingrese una cantidad de días"));
 var año = 365;
 var semana = 7;
 
-//3. Variables cuando los datos vayan siendo procesados
+//3. Se inicializan variables
 var calculoAño = 0;
 var calculoSemana = 0;
 var calculoDias = 0;
@@ -16,9 +16,12 @@ var calculoDias = 0;
 if (dias >= año) {
   calculoAño = dias / año;
   var restoSemanas = dias % año;
+}else{(dias < año)
+  var restoSemanas = dias;
 }
-{
-  if (restoSemanas >= semana) calculoSemana = restoSemanas / semana;
+
+  if (restoSemanas >= semana ) {
+  calculoSemana = restoSemanas / semana;
   var restoDias = restoSemanas % semana;
 }
 if (restoDias > 0) {
@@ -29,6 +32,6 @@ if (restoDias > 0) {
 document.write(
   `<h1>Cantidad de días ingresados: ${Math.floor(dias)} <br> <h1>`
 );
-document.write(`Años: ${Math.floor(calculoAño)}, <br> 
+document.write(`Años: ${Math.floor(calculoAño)}<br> 
 Semanas: ${Math.floor(calculoSemana)} <br>
 Días: ${calculoDias}`);
